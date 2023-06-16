@@ -1,0 +1,123 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="client.master.vb" Inherits="GYM_Management_System.client" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Fitness</title>
+
+    <link rel="Stylesheet" href="/Styles/bootstrap.min.css" />
+    <link rel="Stylesheet" href="/Styles/site.css" />
+    <link rel="Stylesheet" href="/Styles/client.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg w-100">
+        <div class="container-fluid  container">
+            <a class="navbar-brand Stylefont fs-2" href="/Login.aspx">Infinity Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link " aria-current="page" href="/">Home</a>
+                    <a class="nav-link  " href="/Client/Equipment.aspx">Equipments</a>
+                    <a class="nav-link  " href="/Client/Pricing.aspx">Pricing</a>
+                    <a class="nav-link  " href="/Client/Contact.aspx">Contact</a>
+                    <a class="nav-link  " href="/Client/Receipt.aspx">Receipt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <footer class="text-center text-lg-start bg-light text-muted mt-auto">
+        <section class="pt-3">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h1 class="mb-4 Stylefont">
+                            Infinity Fitness
+                        </h1>
+                        <p>
+                            Join now and start your fitness journy with us
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Programs
+                        </h6>
+                        <p>
+                            <span class="text-reset">Weight loss</span>
+                        </p>
+                        <p>
+                            <span class="text-reset">Weight Lifting</span>
+                        </p>
+                        <p>
+                            <span class="text-reset">Yoga</span>
+                        </p>
+                        <p>
+                            <span class="text-reset">Zoomba and more</span>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="/Client/Pricing.aspx" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="/Client/Equipment.aspx" class="text-reset">Equipments</a>
+                        </p>
+                        <p>
+                            <a href="/Client/Contact.aspx" class="text-reset">Contact</a>
+                        </p>
+                        <p>
+                            <a href="/Client/Receipt.aspx" class="text-reset">Receipt</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p>SP University, VVN, Anand</p>
+                        <p>info@infinityfitness.com</p>
+                        <p>+ 91 12345 67888</p>
+                        <p>+ 91 12345 67899</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="/">InfintyFitness.com</a>
+        </div>
+    </footer>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>

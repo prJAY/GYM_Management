@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Manager.master.vb" Inherits="GYM_Management_System.Manager" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+        <title>GYM Management | Manager</title>
+    <link rel="Stylesheet" href="/Styles/bootstrap.min.css" />
+    <link rel="Stylesheet" href="/Styles/site.css" />
+    
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <style>
+    body{
+        height: 100vh;
+        display: grid;
+        grid-auto-rows: max-content 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "main main";
+        overflow: hidden;
+        
+    }
+    nav{
+        grid-area: nav;
+    }
+    .main{
+        grid-area: main;
+        overflow-y: auto;
+    }
+    .mylink:hover
+    {
+        background: #f2f2f2;
+    }
+    tr
+    {
+        position:relative;
+    }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid w-100 justify-content-center">
+        <span class="navbar-brand Stylefont text-center fs-2">Infinity Fitness</span>
+      </div>
+        <button class="btn position-absolute" style="right:10px;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="row main">
+        <div class="col-lg-2" id="navbarTogglerDemo01">
+            <ul class="list-group list-group-flush h-100">
+              <li class="list-group-item mylink"><a href="Home.aspx" class=" text-decoration-none text-muted stretched-link">Home</a></li>
+              <li class="list-group-item mylink"><a href="../Login.aspx" class=" text-decoration-none text-muted stretched-link">Logout</a></li>
+              <li class="list-group-item" style="height:80px;"></li>
+              <li class="list-group-item text-dark">User Management</li>
+              <li class="list-group-item mylink"><a href="NewUser.aspx" class=" text-decoration-none text-muted stretched-link">- Add</a></li>
+              <li class="list-group-item mylink"><a href="Users.aspx" class=" text-decoration-none text-muted stretched-link">- View All</a></li>
+              <li class="list-group-item" style="height:80px;"></li>
+              <li class="list-group-item text-dark">Membership Plans</li>
+              <li class="list-group-item mylink"><a href="NewPlan.aspx" class=" text-decoration-none text-muted stretched-link">- Create</a></li>
+              <li class="list-group-item mylink"><a href="Plans.aspx" class=" text-decoration-none text-muted stretched-link">- View All</a></li>
+              <li class="list-group-item h-100"></li>
+              
+            </ul>
+        </div>
+        <div class="col-lg bg-light">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</body>
+</html>
